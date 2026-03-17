@@ -3,27 +3,27 @@
 PyTorch implementation of "Two-Stage Cascaded U-Net: 
 1st Place Solution to BraTS Challenge 2019 Segmentation Task"
 
-## 项目结构
+## Structure
 ```
 ├── model/
-│   ├── blocks.py          # PreActResBlock等基础模块
-│   ├── stage1.py          # Stage1 U-Net
-│   ├── stage2.py          # Stage2 双解码器网络
-│   └── cascadedUNet.py    # 完整级联网络
+│   ├── blocks.py          # basic blocks
+│   ├── stage1.py          # stage1 
+│   ├── stage2.py          # stage2 
+│   └── cascadedUNet.py    # complete cascaded u-net
 ├── utils/
-│   ├── dataset.py         # 数据加载和预处理
+│   ├── dataset.py         # data loading & preprocessing
 │   └── dice_loss.py       # Soft Dice Loss
-├── train.py               # 训练脚本
-├── predict.py             # 预测脚本
-└── evaluate.py            # 评估指标
+├── train.py               
+├── predict.py             
+└── evaluate.py            
 ```
 
-## 环境依赖
+## Environment
 ```bash
 pip install torch nibabel scipy tqdm tensorboard
 ```
 
-## 结果
+## Result
 ```
 result on validation set 
 directly predict:
