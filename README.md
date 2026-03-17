@@ -4,7 +4,7 @@ PyTorch implementation of "Two-Stage Cascaded U-Net:
 1st Place Solution to BraTS Challenge 2019 Segmentation Task"
 
 ## 项目结构
-\```
+```
 ├── model/
 │   ├── blocks.py          # PreActResBlock等基础模块
 │   ├── stage1.py          # Stage1 U-Net
@@ -16,14 +16,15 @@ PyTorch implementation of "Two-Stage Cascaded U-Net:
 ├── train.py               # 训练脚本
 ├── predict.py             # 预测脚本
 └── evaluate.py            # 评估指标
-\```
+```
 
 ## 环境依赖
-\```bash
+```bash
 pip install torch nibabel scipy tqdm tensorboard
-\```
+```
 
 ## 结果
+```
 result on validation set 
 directly predict:
 dice_WT: 0.8873
@@ -33,3 +34,4 @@ using sliding window:
 dice_WT: 0.9018
 dice_TC: 0.8700
 dice_ET: 0.7529
+```
